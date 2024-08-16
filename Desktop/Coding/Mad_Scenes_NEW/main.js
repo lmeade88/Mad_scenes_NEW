@@ -83,17 +83,40 @@ document.querySelector('#arrow-bottom').addEventListener('click', function() {
 const burger = document.getElementById('burger');
 const overlay = document.getElementById('overlay-menu');
 const menu = document.getElementById('menu');
+const menuItems = menu.getElementsByTagName('a'); // Assuming your menu items are links
 
 burger.addEventListener('click', () => {
-    // Toggle the display of the menu
+    // Toggle the display of the menu and the overlay
     if (menu.style.display === 'block') {
         menu.style.display = 'none';
+        overlay.style.display = 'none'; // Hide the overlay
         burger.textContent = '\u2630'; // Change the burger icon back to three bars
     } else {
         menu.style.display = 'block';
+        overlay.style.display = 'block'; // Show the overlay
         burger.textContent = '\u2715'; // Change the burger icon to an X
     }
 });
+
+// Close the menu and overlay when an overlay is clicked
+overlay.addEventListener('click', () => {
+    closeMenu();
+});
+
+// Close the menu and overlay when a menu item is clicked
+Array.from(menuItems).forEach(item => {
+    item.addEventListener('click', () => {
+        closeMenu();
+    });
+});
+
+// Function to close the menu and overlay
+function closeMenu() {
+    menu.style.display = 'none';
+    overlay.style.display = 'none';
+    burger.textContent = '\u2630'; // Change the burger icon back to three bars
+}
+
 
 // Add a scroll event listener to hide the menu when scrolling
 window.addEventListener('scroll', function() {

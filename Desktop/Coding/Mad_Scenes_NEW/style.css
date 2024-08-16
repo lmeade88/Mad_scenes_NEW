@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(1, 74, 1);
     overflow-x: hidden;
     margin: 0;
+    font-family: Roboto, sans-serif;
 }
 
 h2 {
@@ -238,3 +243,62 @@ svg {
     color: rgb(0, 138, 0);
 }
 
+.player-container {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.player {
+    aspect-ratio: 16/9;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    background: none;
+    padding: 2%;
+    border-radius: 8px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 6%;
+}
+.contact-form h2 {
+    margin-bottom: 3%;
+    font-size: 3em;
+    color: #000000;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: 550;
+}
+.contact-form input,
+.contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.0);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1%;
+    border: none;
+    border-bottom: 3px solid;
+    font-size: 16px;
+    opacity:
+}
+.contact-form button {
+    background-color: rgb(0, 138, 0);
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 550;
+    opacity: .8;
+}
+.contact-form button:hover {
+    opacity: 1;
+}
