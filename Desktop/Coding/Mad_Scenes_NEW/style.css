@@ -2,11 +2,34 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Pseudo-element for the background image */
+body::before {
+    content: "";
+    position: absolute;
+    margin-bottom: 20%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cross.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.02; /* Set opacity */
+    z-index: -10; /* Ensure it stays behind the content */
+}
+
+/* Ensure that your content is not affected by the background image */
+.container, .menu, .address-container, .portfolio, .contact-form {
+    position: relative;
+    z-index: 1;
+}
+
 body {
-    background-color: rgb(1, 74, 1);
+    background-color: rgb(1, 74, 1); /* Fallback background color */
     overflow-x: hidden;
     margin: 0;
     font-family: Roboto, sans-serif;
+    position: relative;
 }
 
 h2 {
@@ -28,7 +51,6 @@ h2 {
     top: 0;
     left: 0;
 }
-
 
 .vidContainer {
     display: flex;
@@ -259,6 +281,7 @@ svg {
 .contact-form {
     background: none;
     padding: 2%;
+    padding-bottom: 6%;
     border-radius: 8px;
     width: 40%;
     margin: auto;
@@ -312,6 +335,7 @@ svg {
 .footer-footer {
     color: rgba(255, 255, 255, 0.808);
     padding: 6%;
+    padding-bottom: 2%;
     margin: auto;
 }
 
