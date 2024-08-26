@@ -267,12 +267,12 @@ svg {
 .contact-form h2 {
     margin-bottom: 3%;
     font-size: 3em;
-    color: #000000;
+    color: rgba(255, 255, 255, 0.808);
 }
 .contact-form label {
     display: block;
     margin-bottom: 5px;
-    color: #000000;
+    color: rgba(255, 255, 255, 0.808);
     font-size: 1.5em;
     font-weight: 550;
 }
@@ -285,11 +285,11 @@ svg {
     border: none;
     border-bottom: 3px solid;
     font-size: 16px;
-    opacity:
+    color: rgba(255, 255, 255, 0.808);
 }
 .contact-form button {
     background-color: rgb(0, 138, 0);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 1%;
     border: none;
     border-radius: 4px;
@@ -302,3 +302,56 @@ svg {
 .contact-form button:hover {
     opacity: 1;
 }
+
+.contact-form input {
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+/* Footer */
+.footer-footer {
+    color: rgba(255, 255, 255, 0.808);
+    padding: 6%;
+    margin: auto;
+}
+
+#footer-logo {
+    width: 20%;
+    padding-left: 2%;
+}
+
+#info-section {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1.1em;
+    padding-left: 5%;
+}
+
+#youtube-logo {
+    width: 18%;
+    padding-left: 2%;
+}
+
+.address {
+    width: 48%;
+}
+
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%;
+}
+
+.address2 {
+    width: 48%;
+    text-align: right;
+    padding-right: 2%;
+}
+
+#mad-user, #mad-email {
+    color: rgba(255, 255, 255, 0.808);
+}
+
+
+
