@@ -6,7 +6,6 @@ html {
 body::before {
     content: "";
     position: absolute;
-    margin-bottom: 20%;
     top: 0;
     left: 0;
     width: 100%;
@@ -162,11 +161,11 @@ svg {
     padding: 0 51% 0 46%;
 }
 
-.portfolio {
+#portfolio {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 10%;
     gap: .5%;
-    padding: 2% 0 10% 2%;
     width: 80%;
     margin: auto;
 }
@@ -280,8 +279,6 @@ svg {
 /* CONTACT FORM */
 .contact-form {
     background: none;
-    padding: 2%;
-    padding-bottom: 6%;
     border-radius: 8px;
     width: 40%;
     margin: auto;
