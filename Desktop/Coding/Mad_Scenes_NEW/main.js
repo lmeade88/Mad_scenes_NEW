@@ -48,6 +48,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Function to show the nav-bar
+function showNavbar() {
+    navbar.classList.add('active');
+}
+
+// Function to hide the nav-bar
+function hideNavbar() {
+    navbar.classList.remove('active');
+}
+
+// Detect mouse near the top of the page
+document.addEventListener('mousemove', (event) => {
+    if (event.clientY < 50) { // If mouse is within 50px from the top
+        showNavbar();
+    } else {
+        hideNavbar();
+    }
+});
+
 
 //* Fade to White
 
