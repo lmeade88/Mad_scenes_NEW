@@ -1,3 +1,5 @@
+/* MAIN STYLES */
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,6 +41,8 @@ h2 {
     color: rgba(255, 255, 255, 0.808);
 }
 
+/* LANDING PAGE */
+
 .container {
     display: flex;
     align-items: center;
@@ -72,6 +76,8 @@ h2 {
     object-fit: cover;
 }
 
+/* MENU */
+
 .overlay {
     position: relative;
     display: flex;
@@ -97,6 +103,8 @@ h2 {
     align-items: center;
     flex-direction: row;
 }
+
+/* NAVBAR */
 
 #nav-bar {
     display: flex;
@@ -160,6 +168,8 @@ a:hover {
 svg {
     padding: 0 51% 0 46%;
 }
+
+/* PORTFOLIO SECTION */
 
 #portfolio {
     display: flex;
@@ -264,6 +274,8 @@ svg {
     color: rgb(0, 138, 0);
 }
 
+/* VIDEO PAGES */
+
 .player-container {
     margin: 0 auto;
     margin-top: 4%;
@@ -278,6 +290,7 @@ svg {
 
 .vid-description {
     font-size: 2em;
+    width: 75%;
     color: rgba(255, 255, 255, 0.808);
     margin: auto;
     text-align: center;
@@ -382,5 +395,56 @@ svg {
     color: rgba(255, 255, 255, 0.808);
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 601px) {
+    #nav-bar, #arrow-bottom, svg {
+        visibility: hidden;
+    }
+
+    svg {
+        height: 0;
+    }
+
+    #nav-bar {
+        height: 2%;
+    }
+
+    .description {
+        font-size: .7em;
+        padding-top: 6%;
+        margin-top: 0;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container, img {
+        width: 100%;
+        padding-bottom: 4%;
+    }
+
+    .image-container .title-overlay {
+        font-size: 2.5em;
+        position:absolute;
+        display: block;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    #footer-logo {
+        width: 60%;
+    }
+
+    #youtube-logo {
+        width: 50%;
+    }
+    
+}
 
 

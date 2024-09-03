@@ -50,6 +50,7 @@ window.addEventListener('scroll', () => {
 
 // Function to show the nav-bar
 function showNavbar() {
+    const navbar = document.querySelector('#nav-bar');
     navbar.classList.add('active');
 }
 
@@ -141,7 +142,6 @@ function closeMenu() {
 window.addEventListener('scroll', function() {
     burger.textContent = '\u2630';
     menu.style.display = 'none';
-    close.style.display = 'none';
 });
 
 
