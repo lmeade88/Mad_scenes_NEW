@@ -398,6 +398,10 @@ svg {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 601px) {
+    body {
+        width: vw;
+    }
+    
     #nav-bar, #arrow-bottom, svg {
         visibility: hidden;
     }
@@ -443,6 +447,11 @@ svg {
 
     #youtube-logo {
         width: 50%;
+    }
+
+    .player {
+        width: 90%;
+        padding: 0;
     }
     
 }
