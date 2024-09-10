@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MAD SCENES</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/Logo.png">
+	</head>
+	<body>
+		<div id="overlay-menu"></div>
+		<div class="menu" id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#description">ABOUT</a></li>
+				<li><a href="#portfolio">WORK</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+		<nav id="nav-bar">
+			<a href="index.html"><img id="nav-logo" src="images/Logo.png" alt="mad scenes logo"></a>
+			<button class="burger" id="burger">&#9776;</button>
+		</nav>
+		<div class="container">
+			<div class="overlay"><img class="overlay-image" src="images/Logo.png" alt="logo"></div>
+			<div class="vidContainer"><video class = "fullscreen-video" autoplay muted loop>
+				<source src="./Video/Reel.m4v" type="video/mp4"></div>
+			</video>
+		</div>
+		<svg>
+			<polygon id="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+		</svg>
+		<section id="description">
+		</section>
+		<div class="trigger"></div>
+		<div id="target"></div>
+		<section class="description">
+			<h2>Animation made in Laois, Ireland.<br>
+			The middle of nowhere.                           
+			The centre of everywhere.<br> See our <a href="#portfolio">portfolio.</a></h2>
+		</section>
+
+		<div id="portfolio" class="portfolio">
+			<div class="image-container">
+				<a href="taxed.html"><img src="images/Taxed.png" alt="Taxed"></a>
+				<a href="taxed.html"><div class="title-overlay">Taxed</div></a>
+			</div>
+			<div class="image-container">
+				<a href="some_people.html"><img src="images/Some People.png" alt="Some People"></a>
+				<a href="some_people.html"><div class="title-overlay">Some People</div></a>
+			</div>
+			<div class="image-container">
+				<a href="know_yourself.html"><img src="images/Driving.png" alt="Know Yourself"></a>
+				<a href="know_yourself.html"><div class="title-overlay">Know Yourself</div></a>
+			</div>
+			<div class="image-container">
+				<a href="lucha_libre.html"><img src="images/Lucha.png" alt="Lucha Libre!"></a>
+				<a href="lucha_libre.html"><div class="title-overlay">Lucha Libre!</div></a>
+			</div>
+			<div class="image-container">
+				<a href="goon_station.html"><img src="images/Goon.jpg" alt="Goon Station"></a>
+				<a href="goon_station.html"><div class="title-overlay">Goon Station</div></a>
+			</div>
+			<div class="image-container">
+				<a href="8th_dimension.html"><img src="images/8th.jpg" alt="The 8th Dimension"></a>
+				<a href="8th_dimension.html"><div class="title-overlay">The 8th Dimension</div></a>
+			</div>
+		</div>
+		<div id="contact" class="contact-form">
+			<h2>Contact Us</h2>
+			<form action="https://example.com/contact" method="POST">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required autocomplete="username">
+		
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required autocomplete="email">
+
+				<label for="subject">Subject</label>
+				<input id="subject" name="subject" rows="4" required></input>
+		
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+		
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+		<div class="address-container">
+			<section class="address">
+				<img id="footer-logo" src="images/Logo.png" alt="Mad scenes logo">
+				<p id="info-section">
+					Mad Scenes Animation<br>
+					Middle of Nowhere<br>
+					Center of Everywhere<br>
+					Éire
+				</p>
+			</section>
+			
+			<section class="address2">
+				<a href="https://youtube.com/@madscenes?si=8WMk7HiYmOVjAhPl" title="Visit our Youtube channel" target="_blank"><img id="youtube-logo" src="images/youtube-logo.png" alt="Youtube logo"></a>
+				<p id="mad-user">@madscenes</p>
+				<p id="mad-email">mad_scenes_animation@yahoo.com</p>
+			</section>
+			<div class="footer-footer">© MAD SCENES Animation 2024</div>
+		</div>
+		
+	
+	<script src="main.js"></script>
+	</body>
+	
+</html>
