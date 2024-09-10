@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(150, 177, 253);
+    display: grid;
+    justify-content: center;
+}
+
+canvas {
+    margin-top: 5em;
+}

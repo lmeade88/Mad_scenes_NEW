@@ -33,6 +33,7 @@ function adjustVideoSize() {
 
 //* Nav Bar Animation
 
+const navbar = document.getElementById("nav-bar");
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('#nav-bar');
     const triggerPoint = document.querySelector('.trigger');
