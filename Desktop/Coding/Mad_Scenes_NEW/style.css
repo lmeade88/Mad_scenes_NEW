@@ -1,4 +1,7 @@
 /* MAIN STYLES */
+html, body {
+    overflow-x: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -49,7 +52,7 @@ h2 {
     z-index: -2;
     position: relative;
     object-fit: cover;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -77,21 +80,27 @@ h2 {
 }
 
 /* MENU */
+.overlay, .overlay-image {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.overlay-image {
+    padding-right: 6%;
+}
 
 .overlay {
     position: relative;
-    display: flex;
     align-items: center;
     overflow: hidden;
     width: 100%;
-    margin: auto;
 }
 
 .overlay-image {
     width: 65%;
-    display: flex;
     align-items: center;
-    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .description {
@@ -112,6 +121,8 @@ h2 {
     top: -30%;
     position: fixed;
     padding: 0;
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     border: none;
     height: 50%;
@@ -132,13 +143,13 @@ h2 {
 .burger {
     position: relative;
     color: #f0eeeed1;
-    left: 410%;
     font-size: 7em;
     border: none;
     background: none;
     padding: 0;
     z-index: 1;
     height: 30%;
+    padding-right: 5%;
 }
 
 a {
@@ -166,7 +177,9 @@ a:hover {
 }
 
 svg {
-    padding: 0 51% 0 46%;
+    margin: auto;
+    width: 8.5%;
+    display: flex;
 }
 
 /* PORTFOLIO SECTION */
@@ -200,6 +213,7 @@ svg {
 .image-container img {
     display: block;
     width: 99%;
+    max-width: 99%;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -396,6 +410,12 @@ svg {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 901px) {
+    svg {
+        margin: auto;
+        width: 14%;
+        display: flex;
+    }
 
 @media screen and (max-width: 601px) {
     body {
@@ -404,10 +424,6 @@ svg {
     
     #nav-bar, #arrow-bottom, svg {
         visibility: hidden;
-    }
-
-    svg {
-        height: 0;
     }
 
     #nav-bar {
@@ -453,6 +469,19 @@ svg {
         width: 90%;
         padding: 0;
     }
+
+    .container {
+        width: 100%;
+    }
+    /* Adjustments for other large elements */
+    .fullscreen-video, .overlay-image, .image-container img {
+        width: 100%;
+    }
+    .overlay-image {
+        padding-right: 2%;
+        width: 90%;
+    }
+}
     
 }
 
